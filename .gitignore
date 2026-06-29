@@ -1,0 +1,24 @@
+# === КОНФИГУРАЦИЯ ===
+config/config.php
+.env
+
+# === PASS HASH ===
+gen_hash.php
+
+# === ЛОГИ И КЭШ ===
+storage/
+*.log
+
+# === ЗАВИСИМОСТИ ===
+vendor/
+
+# === OS / IDE мусор ===
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.sublime-workspace
+nbproject/
+
+# === Загруженные файлы пользователей ===
+img/uploads/

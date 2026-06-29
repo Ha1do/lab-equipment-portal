@@ -1,0 +1,11 @@
+Options -Indexes
+
+RewriteEngine On
+
+# Если реальный файл или папка (css, js, img) — отдать как есть
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# Всё остальное — через index.php
+RewriteRule ^ index.php [QSA,L]
